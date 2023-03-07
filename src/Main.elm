@@ -1,7 +1,7 @@
 port module Main exposing (Model, Msg, main)
 
 import Browser
-import Html exposing (..)
+import Html exposing (Html, div, li, main_, nav, text, ul)
 import Html.Attributes exposing (class, id)
 
 
@@ -23,7 +23,7 @@ type alias Model =
 
 
 init : () -> ( Model, Cmd msg )
-init flags =
+init _ =
     ( { element = Nothing }, Cmd.none )
 
 
@@ -39,7 +39,7 @@ update msg model =
 
 
 view : Model -> Html Msg
-view model =
+view _ =
     main_ [ id "app" ]
         [ nav []
             [ ul []
@@ -64,5 +64,5 @@ view model =
 
 
 subscriptions : Model -> Sub Msg
-subscriptions model =
+subscriptions _ =
     onIntersection Intersected
