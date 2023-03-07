@@ -2,4 +2,23 @@
 @tailwind components;
 @tailwind utilities;
 
-body { height: 100vh; }
+ul {
+  margin-bottom: 32px;
+}
+
+.item {
+  padding: 32px;
+  margin: 8px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
+
+.recommendation {
+  padding: 32px;
+  margin: 8px;
+}
+
+.intersecting {
+  background-color: #eee;
+  border: 1px solid #ccc;
+}
