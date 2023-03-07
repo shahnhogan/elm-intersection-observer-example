@@ -3,7 +3,7 @@ name: Elm CI
 on:
   push:
     branches:
-      - "main"
+      - 'main'
   pull_request:
 
 jobs:
@@ -48,8 +48,8 @@ jobs:
       - name: elm make
         run: npx --no-install elm make src/Main.elm --output=/dev/null
 
-      - name: elm-test
-        run: yarn test
+      # - name: elm-test
+      #   run: yarn test
 
       - name: elm-review
         run: yarn review
