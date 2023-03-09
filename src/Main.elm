@@ -55,11 +55,13 @@ view _ =
                 , li [ class "item" ] [ text "item 9" ]
                 , li [ class "item" ] [ text "item 10" ]
                 ]
+            , ul []
+                [ li [ class "recommendation", id "1" ] [ text "lazy item 1" ]
+                , li [ class "recommendation", id "2" ] [ text "lazy item 2" ]
+                , li [ class "recommendation", id "3" ] [ text "lazy item 3" ]
+                , li [ class "recommendation", id "4" ] [ text "lazy item 4" ]
+                ]
             ]
-        , div [ class "recommendation", id "1" ] [ text "lazy item 1" ]
-        , div [ class "recommendation", id "2" ] [ text "lazy item 2" ]
-        , div [ class "recommendation", id "3" ] [ text "lazy item 3" ]
-        , div [ class "recommendation", id "4" ] [ text "lazy item 4" ]
         ]
 
 
